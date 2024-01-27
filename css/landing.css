@@ -13,11 +13,7 @@ body{
     --gray-first:hsl(201, 11%, 66%);
 }
 
-body, html, .container {
-    overflow-x: visible;
-  }
-
-  .container{
+.container{
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -73,7 +69,7 @@ p{
 }
 
 .head p{
-    width: 521px;
+
     text-align: center;
     color: var(--gray-first);
     margin-bottom: 54px;
@@ -109,7 +105,7 @@ p{
 
 
 .h2-and-p{
-    width: 514px;
+
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -141,11 +137,11 @@ p{
 
     margin-top: 28px;
     margin-bottom: 22px;
-    width: 400px;
+
 }
 
 .first-section img{
-    width: 500px;
+
 }
 
 .first-section div h4{
@@ -211,7 +207,8 @@ p{
     justify-content: center;
     text-align: center;
     align-items: center;
-    width: 337px;
+    margin: 10px;
+    width: 30%;
 }
 .icon-websites div > img{
     margin: 30px;
@@ -223,17 +220,20 @@ p{
 }
 .icon-websites div > p{
     color: var(--gray-first);
-    width: 303px;
+
 } 
-
+.icon-brand {
+        display: flex;
+    justify-content: center;
+    margin-top: 26px;
+    flex-wrap: wrap;
+    width: 100%;
+}
 .icon-brand .container{
-    display: flex;
-    justify-content: space-around;
 
-    margin-top: 150px;
 }
 .icon-brand .container img{
-        transform: scale(0.750);
+    margin: 15px;
 }
 
 
@@ -256,7 +256,7 @@ p{
 }
 
 .second-head p{
-    width: 521px;
+
     text-align: center;
     color: var(--gray-first);
     margin-bottom: 54px;
@@ -299,11 +299,14 @@ p{
     justify-content: space-between;
 }
 .footer .container div:first-child{
-        display: flex;
+    display: flex;
     justify-self: center;
+    justify-content: center;
+    align-items: center;
 }
 .footer .container div:first-child img{
     width: 100px;
+    height: 100px;
 }
 
 .footer-list{
@@ -318,7 +321,7 @@ p{
     align-self: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 455px;
+
 }
 .footer-list ul li{
     margin: 13px;
@@ -326,7 +329,7 @@ p{
     color: var(--gray-dark);
 }
 .footer-list ul li:nth-child(5){
-    width: 266px;
+
 }
 .footer-list ul li:hover{
     cursor: pointer;
@@ -350,7 +353,6 @@ p{
 
 @media (max-width:768px){
     body {
-        width: 768px;
         margin: 0 auto;
         font-family: "Bai Jamjuree";
     }
@@ -364,7 +366,6 @@ p{
         flex-wrap: wrap;
     }
     .head p {
-        width: 331px;
         text-align: center;
         color: var(--gray-first);
         margin-bottom: 54px;
@@ -383,7 +384,7 @@ p{
     }
 
     .h2-and-p {
-        width: 331px;
+
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -394,37 +395,32 @@ p{
     .h2-and-p h2 {
         color: var(--gray-dark);
         font-size: 29px;
-        width: 331px;
+
         display: flex;
         justify-content: center;
     }
     .first-section {
-        width: 331px;
         display: grid;
         grid-template: 1fr 1fr/1fr;
         /* column-gap: 50px; */
         margin-bottom: -50px;
     }
     .first-section img {
-        transform: scale(0.8) translate(26px, -119px);
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 331px;
+        width: 100%;
     }
     .first-section div {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        margin-top: -11px;
-        margin-bottom: 22px;
-        width: 370px;
+        margin-top: 11px;
+        width: 100%;
         align-items: center;
-        /* margin: 0 auto; */
     }
     .first-section div p {
         color: var(--gray-first);
-        width: 331px;
         /* display: flex; */
         justify-content: center;
         align-items: center;
@@ -434,30 +430,27 @@ p{
         display: flex;
         flex-direction: column;
         text-align: center;
-        width: 370px;
         margin: 101px auto 0;
     }
     .landing-page > img {
         /* display: flex; */
         margin: 80px auto;
-        transform: scale(0.);
-        justify-content: center;
-        align-self: center;
-        width: 370px;
+
+
     }
     .h2-and-p-last {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 370px;
-        margin: 0 auto;
+
+        margin-top: 100px;
     }
     .h2-and-p-last h2 {
         color: var(--gray-dark);
         margin-bottom: 13px;
         font-size: 29px;
-        width: 370px;
+
         display: flex;
         justify-content: center;
         text-align: center;
@@ -465,8 +458,6 @@ p{
     .icon-websites {
         display: flex;
         justify-content: center;
-        margin: 103px auto;
-        width: 370px;
         flex-wrap: wrap;
     }
     .icon-websites div {
@@ -475,29 +466,28 @@ p{
         justify-content: center;
         text-align: center;
         align-items: center;
-        width: 337px;
+        width: 100%;
     }
     .icon-websites div > p {
         color: var(--gray-first);
-        width: 303px;
+
+    }
+    .icon-brand{
+        display: flex; 
+     justify-content: center; 
+     margin-top: 26px; 
+     flex-wrap: wrap; 
+
     }
     .icon-brand img {
-        display: flex;
-        justify-content: center;
-        transform: scale(0.750);
-        margin-top: 26px;
-        flex-wrap: wrap;
-        align-items: center;
-        margin: 26px auto 0;
+
     }
     .second-head {
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        margin: 150px 0;
-        /* flex-wrap: wrap; */
-        width: 370px;
+        margin: 100px 0;
     }
     .second-head h2 {
         margin-bottom: 20px;
@@ -510,7 +500,6 @@ p{
         text-align: center;
     }
     .second-head p {
-        width: 370px;
         text-align: center;
         color: var(--gray-first);
         margin-bottom: 54px;
@@ -520,17 +509,18 @@ p{
         padding: 10px 8px;
         color: white;
         font-weight: bold;
-        width: 333px;
         display: flex;
         justify-content: center;
     }
     .footer {
         background-color: #f4f3f3;
-        display: grid;
-        grid-template: 1fr 2fr 1fr/1fr;
-        width: 370px;
-        DISPLAY: FLEX;
+
+    }
+    .footer .container{
+        display: flex;
+        align-items: center;
         flex-direction: column;
+        justify-content: center;
     }
     .footer > img {
         transform: scale(0.5) translate(0, 0px);
@@ -546,31 +536,27 @@ p{
         list-style: none;
         display: flex;
         align-items: center;
-        /* justify-content: center; */
-        /* flex-wrap: wrap; */
-        width: 330px;
         flex-direction: column;
         text-align: center;
-        /* margin: auto; */
+        justify-content: center;
+        padding: 10px 0 0 0;
+
     }
     .footer-list ul li {
         margin: 18px;
         margin-top: 0px;
         color: var(--gray-dark);
-        /* display: flex; */
-        /* justify-content: center; */
-        /* align-items: center; */
     }
     .footer-icon img {
         margin: 0 15px;
     }
     .footer-list ul li:nth-child(5) {
-        /* width: 370px; */
+
     }
     .footer-icon {
         display: flex;
         justify-content: center;
         align-items: center;
-        /* margin: 0 auto; */
+
     }
 }
